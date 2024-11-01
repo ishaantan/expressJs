@@ -1,0 +1,38 @@
+{
+  "name": "expressjs",
+  "version": "1.0.0",
+  "description": "express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishaantan/expressJs.git"
+  },
+  "keywords": [
+    "express",
+    "nodejs"
+  ],
+  "author": "ishaan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishaantan/expressJs/issues"
+  },
+  "homepage": "https://github.com/ishaantan/expressJs#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.11.0",
+    "nodemon": "^3.1.7",
+    "prettier": "3.3.3"
+  }
+}
