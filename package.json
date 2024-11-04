@@ -1,44 +1,52 @@
 {
-  "name": "expressjs",
-  "version": "1.0.0",
-  "description": "express",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "nodemon --inspect src/index.js",
-    "watch": "node-sass --watch src/resources/scss -o src/public/css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ishaantan/expressJs.git"
-  },
-  "keywords": [
-    "express",
-    "nodejs"
-  ],
-  "author": "ishaan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ishaantan/expressJs/issues"
-  },
-  "homepage": "https://github.com/ishaantan/expressJs#readme",
-  "dependencies": {
-    "cookie-parser": "^1.4.7",
-    "cors": "^2.8.5",
-    "ejs": "^3.1.10",
-    "express": "^4.21.1",
-    "express-handlebars": "^8.0.1",
-    "node-sass": "^9.0.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.13.0",
-    "eslint": "^9.13.0",
-    "eslint-plugin-react": "^7.37.2",
-    "globals": "^15.11.0",
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.1.7",
-    "prettier": "^3.3.3"
-  }
+    "name": "expressjs",
+    "version": "1.0.0",
+    "description": "express",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "nodemon --inspect src/index.js",
+        "watch": "node-sass --watch src/resources/scss -o src/public/css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "lint-staged": {
+        "src/**/*.{js,json,scss}": "prettier package.json --tab-width 2 --write --single-quote --trailing-comma all"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ishaantan/expressJs.git"
+    },
+    "keywords": [
+        "express",
+        "nodejs"
+    ],
+    "author": "ishaan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ishaantan/expressJs/issues"
+    },
+    "homepage": "https://github.com/ishaantan/expressJs#readme",
+    "dependencies": {
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "ejs": "^3.1.10",
+        "express": "^4.21.1",
+        "express-handlebars": "^8.0.1",
+        "node-sass": "^9.0.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.13.0",
+        "eslint": "^9.13.0",
+        "eslint-plugin-react": "^7.37.2",
+        "globals": "^15.11.0",
+        "husky": "^9.1.6",
+        "lint-staged": "^15.2.10",
+        "morgan": "^1.10.0",
+        "nodemon": "^3.1.7",
+        "prettier": "^3.3.3"
+    }
 }
