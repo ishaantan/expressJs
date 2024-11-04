@@ -11,10 +11,10 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-app.use(morgan("combined"));
+        app.use(express.json());
+            app.use(morgan("combined"));
 app.engine("hbs", engine({ extname: ".hbs" }));
-app.use(cookieParser());
+    app.use(cookieParser());
 app.use(
   cors({
     origin: "http://localhost:5173",
